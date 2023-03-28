@@ -9,6 +9,8 @@ describe("rating spec", () => {
   });
 
   it("should be able to rate another user", () => {
+    // NOTE: this won't work with RatedUserCards!
+
     cy.get(".ant-slider-handle-2").as("slider-handle");
     const targetValue = 3.5;
 
